@@ -1,0 +1,50 @@
+* {
+	font-family: 'Lato', sans-serif;
+}
+
+html {
+	background: url('../img/cat.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+body {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: transparent !important;
+	padding-top: 50px;
+	color: #fff !important;
+}
+
+.box {
+	padding: 15px 20px 25px 20px;
+	border-radius: 15px;
+	background: rgba(0,0,0,0.3);
+}
+
+.links a {
+	margin-right: 20px;
+	color: white;
+}
+
+.links a:hover, .links a:focus {
+	outline: none;
+	color: white;
+	text-decoration: none;
+}
+
+/*.shawn {
+	font-size: 8em;
+}
+.tagline {
+	font-size: 5em;
+}
+.creds {
+	font-size: 4em;
+}
+.links {
+	font-size: 3em;
+}*/
