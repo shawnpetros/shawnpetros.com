@@ -11,3 +11,9 @@
 	color: #cfcfcf;
 	opacity: 1;
 }
+
+.hide {
+	font-size: 0em;
+	display: none;
+	opacity: 0;
+}
