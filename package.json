@@ -2,7 +2,7 @@
   "name": "shawnpetros.com",
   "version": "0.0.1",
   "private": true,
-  "homepage": "https://shawnpetros.github.io/shawnpetros.github.io/",
+  "homepage": "https://shawnpetros.github.io/",
   "devDependencies": {
     "react-scripts": "1.1.0"
   },
