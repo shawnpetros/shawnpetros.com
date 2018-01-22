@@ -5,8 +5,10 @@ cache:
   directories:
   - node_modules
 script:
+  - set -e
   - npm test
   - npm run build
+  - set +e
 deploy:
   provider: pages
   skip_cleanup: true
