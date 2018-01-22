@@ -18,6 +18,7 @@ deploy:
     branch: master
 deploy:
   provider: surge
+  skip_cleanup: true
   project: ./build/
   domain: www.shawnpetros.com
   on:
