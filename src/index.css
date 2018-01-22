@@ -1,0 +1,17 @@
+html {
+	font-size: 72.5%;
+}
+
+* {
+	font-family: 'Arima Madurai', cursive;
+	color: #e4e4e4;
+}
+
+.lato {
+	font-family: 'Lato', sans-serif;
+}
+
+body {
+	font-size: 1.6rem;
+	background-color: #1e6161;
+}
