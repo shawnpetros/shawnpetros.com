@@ -1,6 +1,6 @@
 .links > a {
 	text-decoration: none;
-	color: #ced3d6;
+	color: #3a3a3a;
 	opacity: 0.4;
 	font-size: 1.4rem;
 	letter-spacing: 1.2rem;
@@ -8,7 +8,7 @@
 }
 
 .links > a:hover {
-	color: #cfcfcf;
+	color: #4b4b4b;
 	opacity: 1;
 }
 

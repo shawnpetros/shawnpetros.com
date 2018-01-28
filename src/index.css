@@ -1,10 +1,22 @@
+:root {
+	--main-bg-color: #eeeeee;
+	--hero-bg-color: #1d4161;
+	--main-font-color-light: #c1c8d8;
+	--secondary-font-color-light: #97abbd;
+	--link-main-color-light: #bdbdbd;
+	--link-hover-color-light: #cecece;
+	--main-font-color-dark: #333742;
+	--secondary-font-color-dark: #2c3136;
+	--link-main-color-dark: #0d0f2b;
+	--link-hover-color-dark: #071241;
+}
+
 html {
 	font-size: 72.5%;
 }
 
 * {
 	font-family: 'Arima Madurai', cursive;
-	color: #e4e4e4;
 }
 
 .lato {
@@ -12,6 +24,7 @@ html {
 }
 
 body {
+	margin: 0;
 	font-size: 1.6rem;
-	background-color: #1e6161;
+	background-color: var(--main-bg-color);
 }
