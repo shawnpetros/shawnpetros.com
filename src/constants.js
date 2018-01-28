@@ -2,7 +2,7 @@ export default {
   hero: {
     me: 'Shawn Petros',
     tagline: 'philomath; father, husband, engineer',
-    summary: 'javascript and cloud guy...currently being awesome at ',
+    summary: 'javascript, cloud, and devops guy...currently being awesome at ',
     company: {
       name: 'Northwestern Mutual',
       link: 'https://github.com/northwesternmutual',
