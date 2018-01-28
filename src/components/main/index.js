@@ -1,14 +1,13 @@
 import React from 'react';
 import Hero from '../hero';
-import Links from '../links';
+// import Links from '../links';
 import './index.css';
 import Constants from '../../constants';
 
-const { links } = Constants;
+const { hero } = Constants;
 
 export default () => (
   <main>
-    <Hero { ...links } />
-    <Links { ...links }/>
+    <Hero { ...hero } />
   </main>
 );

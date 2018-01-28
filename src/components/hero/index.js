@@ -1,11 +1,11 @@
 import React from 'react';
 import './index.css';
 
-export default ({ nm }) => (
+export default ({ me, tagline, summary, company }) => (
   <div className="hero">
     <div id="avatar"></div>
-    <h1>Shawn Petros</h1>
-    <h3 className="lato tagline">philomath; father, husband, engineer</h3>
-    <p className="summary">javascript and cloud guy...currently being awesome at <a href={ nm } className="nm">Northwestern Mutual</a></p>
+    <h1>{ me }</h1>
+    <h3 className="lato tagline">{ tagline }</h3>
+    <p className="summary">{ summary }<a href={ company.link } className="nm">{ company.name }</a></p>
   </div>
 );
