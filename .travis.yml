@@ -1,7 +1,4 @@
 language: node_js
-branches:
-  only:
-    - master
 node_js:
   - "stable"
 cache:
@@ -17,8 +14,12 @@ deploy:
   skip_cleanup: true
   github_token: $github_deploy_token
   local_dir: build
+  on:
+    branch: master
 deploy:
   provider: surge
   skip_cleanup: true
   project: ./build/
   domain: www.shawnpetros.com
+  on:
+    branch: master
