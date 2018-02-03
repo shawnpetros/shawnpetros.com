@@ -1,0 +1,18 @@
+.work h2 {
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(134, 134, 134, 0.3);
+}
+
+.work p {
+  font-size: 1.3rem;
+}
+
+.work h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0;
+}
+
+.work h5 {
+  margin-top: 0;
+  color: #383838;
+}

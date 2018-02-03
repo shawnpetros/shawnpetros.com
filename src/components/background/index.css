@@ -1,0 +1,8 @@
+.bio h2 {
+  text-transform: uppercase;
+  border-bottom: 1px solid rgba(134, 134, 134, 0.3);
+}
+
+.bio p {
+  font-size: 1.3rem;
+}
