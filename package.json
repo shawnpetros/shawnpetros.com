@@ -33,6 +33,7 @@
   "scripts": {
     "start": "webpack-dev-server --config ./webpack.config.js --mode development",
     "test": "jest",
+    "serve": "npm run build && pushstate-server dist",
     "build": "rm -rf ./dist && cp -a ./public/. ./dist/ && webpack --mode production"
   },
   "babel": {

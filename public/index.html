@@ -8,8 +8,6 @@
     <link href="./favicon.ico" rel="shortcut icon">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
     <title>Shawn Petros - JavaScript and DevOps Engineer</title>
   </head>
   <body>
@@ -18,8 +16,26 @@
     </noscript>
     <div id="root"></div>
 
+    <noscript id="deferred-styles">
+      <!-- Google Font -->
+      <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet">
+    </noscript>
+    <script>
+      var loadDeferredStyles = function() {
+        var addStylesNode = document.getElementById("deferred-styles");
+        var replacement = document.createElement("div");
+        replacement.innerHTML = addStylesNode.textContent;
+        document.body.appendChild(replacement)
+        addStylesNode.parentElement.removeChild(addStylesNode);
+      };
+      var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+          window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+      if (raf) raf(function() { window.setTimeout(loadDeferredStyles, 0); });
+      else window.addEventListener('load', loadDeferredStyles);
+    </script>
+
     <!-- bundle -->
-    <script src="./bundle.js"></script>
+    <script src="./bundle.js" async></script>
     <!-- glite analytics -->
     <script src="https://cdn.jsdelivr.net/ga-lite/latest/ga-lite.min.js" async></script>
     <script>

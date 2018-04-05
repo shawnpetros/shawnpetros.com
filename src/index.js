@@ -4,3 +4,5 @@ import './index.css';
 import Main from './components/main';
 
 ReactDOM.render(<Main />, document.getElementById('root'));
+
+module.hot.accept();
