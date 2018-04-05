@@ -10,7 +10,6 @@ cache:
 script:
   - set -e
   - npm test
-  - cp -av ./public/. ./dist/
   - npm run build
   - set +e
 deploy:
