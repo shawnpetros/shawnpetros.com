@@ -31,7 +31,7 @@
   },
   "scripts": {
     "test": "jest",
-    "build": "cp -av ./public/. ./dist/ && webpack"
+    "build": "rm -rf ./dist && cp -av ./public/. ./dist/ && webpack --mode production"
   },
   "babel": {
     "presets": [
