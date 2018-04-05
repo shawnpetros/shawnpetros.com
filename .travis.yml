@@ -4,6 +4,9 @@ branches:
     - master
 node_js:
   - "stable"
+before_install:
+  - sudo apt-get -qq update
+  - sudo apt-get install -y nasm
 cache:
   directories:
   - node_modules
@@ -16,13 +19,13 @@ deploy:
   provider: pages
   skip_cleanup: true
   github_token: $github_deploy_token
-  local_dir: build
+  local_dir: dist
   on:
     branch: master
 deploy:
   provider: surge
   skip_cleanup: true
-  project: ./build/
+  project: ./dist/
   domain: https://shawnpetros.com
   on:
     branch: master
