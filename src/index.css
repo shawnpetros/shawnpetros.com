@@ -3,12 +3,8 @@ html {
 }
 
 * {
-	font-family: 'Arima Madurai', cursive;
+	font-family: 'Open Sans', sans-serif;
 	color: #e4e4e4;
-}
-
-.lato {
-	font-family: 'Lato', sans-serif;
 }
 
 body {

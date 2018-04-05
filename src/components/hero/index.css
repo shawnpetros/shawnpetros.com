@@ -44,10 +44,10 @@ main {
 .nm {
 	color: #ffb81c;
 	text-decoration: none;
+	font-weight: 600;
 }
 
 .nm:hover {
-	color: #002b49;
+	color: white;
 	text-decoration: underline;
-	font-weight: bold;
 }
