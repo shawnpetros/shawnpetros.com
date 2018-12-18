@@ -1,13 +1,86 @@
-main {
-	position: absolute;
-	right: 7%;
-	top: 6%;
-	left: 7%;
+.text-wrap{
+	margin: 0;
+	position: relative;
+	width: 100%;
+	top: -10vh;
+}
+
+.wrapper {
+  /* The height needs to be set to a fixed value for the effect to work.
+   * 100vh is the full height of the viewport. */
+  height: 100vh;
+  /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+  overflow-x: hidden;
+  /* Enable scrolling on the page. */
+  overflow-y: auto;
+  /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
+  perspective: 2px;
+}
+
+.section {
+  /* Needed for children to be absolutely positioned relative to the parent. */
+  position: relative;
+  /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+  height: 100vh;
 	display: flex;
-	align-items: flex-end;
-	padding-bottom: 0;
-	flex-wrap: wrap;
-	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.section > h1 {
+	/* For text formatting. */
+	text-transform: uppercase;
+	font-size: 20vw;
+	font-weight: bold;
+	color: white;
+	text-shadow: 0px 5px 5px #000;
+}
+
+.parallax::after {
+  /* Display and position the pseudo-element */
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  
+  /* Move the pseudo-element back away from the camera,
+   * then scale it back up to fill the viewport.
+   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+  transform: translateZ(-1px) scale(1.5);
+  /* Force the background image to fill the whole element. */
+  background-size: 100%;
+  /* Keep the image from overlapping sibling elements. */ 
+  z-index: -1;
+}
+
+.bg1::after {
+	background-image: url('./hero-optimized.jpeg');
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+.static {
+	background-color: #2f2f2f;
+}
+
+svg {
+	position: absolute;
+	width: 100%;
+	height: auto;
+	font: bold 100px sans-serif;
+	text-transform: uppercase;
+}
+
+.img-layer {
+	fill: url(#p-img);
+}
+
+.gradient-layer {
+	fill: url(#gr-overlay);
 }
 
 #avatar {
@@ -19,26 +92,74 @@ main {
 	border-radius: 50%;
 }
 
+#name-block {
+	font-size: 6em;
+	font-weight: bold;
+	line-height: 1;
+	position: relative;
+	display: inline-block;
+	margin: .25em;
+	padding: .5em .75em;
+	text-align: center;
+	/* Color fallback */
+	color: #fff;
+	-webkit-background-clip: text;
+	
+	-webkit-text-fill-color: transparent;
+	/* background-image: url('./hero-optimized.jpeg'); */
+}
+
+#name-block:before,
+#name-block:after {
+	position: absolute;
+	content: '';
+}
+
+#name-block,
+#name-block:before {
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+
+#name-block:before {
+	z-index: -2;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: inherit;
+}
+
+#name-block:after {
+	position: absolute;
+	z-index: -1;
+	top: .125em;
+	right: .125em;
+	bottom: .125em;
+	left: .125em;
+	background-color: #000;
+}
+
 .hero {
+}
+
+.header {
+	align-self: flex-start;
+	position: fixed;
+	top: 0;
+	width: 100vw;
+	background-color: black;
+	z-index: 100;
+}
+
+.header ul {
+	list-style-type: none;
 	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
-	text-align: right;
-}
-
-.summary {
-	margin-top: 4.5rem;
-	font-size: 1.3rem;
-	text-align: right;
-	color: #b2b9bf;
-	max-width: 450px;
-}
-
-.tagline {
-	text-transform: uppercase;
-	font-size: 0.9rem;
-	margin: 0;
-	letter-spacing: 0.1rem;
+	padding: 0 20vw;
+	justify-content: space-evenly;
+	font-size: calc(18px + 1vw);
 }
 
 .nm {

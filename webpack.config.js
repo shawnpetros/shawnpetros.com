@@ -1,5 +1,5 @@
-const webpack = require('webpack');
-const path = require('path');
+const webpack = require('webpack')
+const path = require('path')
 
 module.exports = {
   entry: [
@@ -32,6 +32,7 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin()
   ],
+  devtool: 'inline-source-map',
   devServer: {
     contentBase: './dist',
     hot: true

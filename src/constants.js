@@ -4,6 +4,6 @@ export default {
     linkedin: 'https://www.linkedin.com/in/spetros',
     twitter: 'https://twitter.com/arashcuzi',
     github: 'https://github.com/shawnpetros',
-    email: 'mailto:shawn.petros@gmail.com',
-  },
-};
+    email: 'mailto:shawn.petros@gmail.com'
+  }
+}
