@@ -20,7 +20,7 @@
     "start": "parcel src/public/index.html",
     "test": "jest",
     "serve": "npm run build && pushstate-server dist",
-    "build": "parcel build src/public/index.html"
+    "build": "rm -rf dist .cache && parcel build src/public/index.html"
   },
   "standard": {
     "extends": "react-app",
