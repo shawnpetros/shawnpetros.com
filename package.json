@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "react": "^16.3.1",
-    "react-dom": "^16.3.1"
+    "react-dom": "^16.3.3"
   },
   "scripts": {
     "start": "parcel src/public/index.html",
