@@ -1,0 +1,53 @@
+main {
+  position: absolute;
+  right: 7%;
+  top: 6%;
+  left: 7%;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 0;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+#avatar {
+  background-image: url('../components/hero/me.jpg');
+  width: 75px;
+  height: 75px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+}
+
+.summary {
+  margin-top: 4.5rem;
+  font-size: 1.3rem;
+  text-align: right;
+  color: #b2b9bf;
+  max-width: 450px;
+}
+
+.tagline {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  margin: 0;
+  letter-spacing: 0.1rem;
+}
+
+.nm {
+  color: #ffb81c;
+  text-decoration: none;
+  font-weight: 600;
+
+  &:hover {
+    color: white;
+    text-decoration: underline;
+  }
+}
