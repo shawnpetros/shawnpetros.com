@@ -1,6 +1,6 @@
 export default {
   links: {
-    nm: 'https://github.com/northwesternmutual',
+    gmr: 'https://gmrmarketing.com/en-us/jobs/',
     linkedin: 'https://www.linkedin.com/in/spetros',
     twitter: 'https://twitter.com/shawnpetros',
     github: 'https://github.com/shawnpetros',
