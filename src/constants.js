@@ -1,6 +1,6 @@
 export default {
   links: {
-    gmr: 'https://gmrmarketing.com/en-us/jobs/',
+    tg: 'https://www.teschglobal.com',
     linkedin: 'https://www.linkedin.com/in/spetros',
     twitter: 'https://twitter.com/shawnpetros',
     github: 'https://github.com/shawnpetros',
